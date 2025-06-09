@@ -21,6 +21,8 @@ jobs:
           command: |
             . venv/bin/activate
             pytest --template=html1/index.html --report=report.html
+      - store_test_results:
+          path: test-results
       - store_artifacts:
           path: report.html
           destination: python-report
