@@ -7,7 +7,7 @@ describe('Test goals on clickup', () => {
           expect(response.status).to.eq(200)
         })
   })
-  /*it('Should sent PUT request and return 200', () => {
+  it('Should sent PUT request and return 200', () => {
     cy.updateTask()
         .then((response) => {
           expect(response.status).to.eql(204)
@@ -31,7 +31,7 @@ describe('Test goals on clickup', () => {
             expect(response.status).to.eql(204)
           })
     })
-  })*/
+  })
   it('Should sent POST request and return 401', () => {
     cy.sentRequest_false('list/901511896594/task', 'POST',{"name": faker.internet.username()})
         .then((response) => {
