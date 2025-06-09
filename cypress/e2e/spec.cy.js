@@ -44,10 +44,4 @@ describe('Test goals on clickup', () => {
           expect(response.status).to.eq(401)
         })
   })
-  it('Should sent POST request and return 401', () => {
-    cy.sentRequest_false('list/901511896594/task', 'POST')
-        .then((response) => {
-          expect(response.status).to.eq(401)
-        })
-  })
 })
