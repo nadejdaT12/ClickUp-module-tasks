@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-describe('Test goals on clickup', () => {
+describe('Test tasks on clickup', () => {
   it('Should sent Get_Tasks_simple request and return 200', () => {
     //url, method, header, body
     cy.sentRequest('list/901511896594/task', 'GET')
